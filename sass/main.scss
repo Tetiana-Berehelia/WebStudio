@@ -1,0 +1,209 @@
+:root {
+  accent-color: #2196f3;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+// ================= HEADER ====================
+
+.page-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28px / 24px);
+  letter-spacing: 0.03em;
+
+  color: #2196f3;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 87px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: calc(31px / 26px);
+    margin-right: 93px;
+  }
+}
+
+.logo-right {
+  color: #212121;
+}
+
+.menu {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+// .menu-item {
+// }
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16px / 14px);
+  letter-spacing: 0.02em;
+
+  color: #212121;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #2196f3;
+}
+
+.link.current {
+  color: #2196f3;
+}
+
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.burger-btn-icon {
+  display: block;
+}
+
+.contact-list {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// .contact-list-item {
+// }
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+}
+
+.contact-list-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(14px / 12px);
+  letter-spacing: 0.02em;
+
+  color: #757575;
+
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(16px / 14px);
+  }
+}
+
+.contact-list-link:hover,
+.contact-list-link:focus {
+  color: #2196f3;
+}
+
+.contact-list-icon {
+  margin-right: 8px;
+  fill: #757575;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
+}
+
+.contact-list-link:hover .contact-list-icon,
+.contact-list-link:focus .contact-list-icon {
+  fill: #2196f3;
+}
+
+// ========================== HERO ===========================
